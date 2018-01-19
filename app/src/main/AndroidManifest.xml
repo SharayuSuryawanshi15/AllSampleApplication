@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.v2team.allsampleapplication">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".BroadCastReceiverDemoPhoneCallState">
+        </activity>
+
+        <receiver android:name=".PhoneCallStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ORMLiteDemo.ORMLiteDemo">
+        </activity>
+        <activity android:name=".ORMLiteDemo.StudentAddActivity">
+        </activity>
+        <activity android:name=".ORMLiteDemo.TeacherAddActivity">
+        </activity>
+        <activity android:name=".ORMLiteDemo.ViewTeacherRecordActivity">
+        </activity>
+        <activity android:name=".ORMLiteDemo.ViewTeacherDetailsActivity">
+        </activity>
+        <activity android:name=".Android3Tutorial.DatePickerDemoActivity">
+        </activity>
+        <activity android:name=".Android3Tutorial.TimePickerDemoActivity">
+        </activity>
+        <activity android:name=".Android3Tutorial.AnalogAndDigitalClockDemoActivity">
+        </activity>
+        <activity android:name=".Android3Tutorial.ProgressBarDemoActivity">
+        </activity>
+        <activity android:name=".Android3Tutorial.ButtonDemoActivity">
+        </activity>
+        <activity android:name=".Android3Tutorial.ToastDemoActivity">
+        </activity>
+        <activity android:name=".Android3Tutorial.ToggleButtonDemoActivity">
+        </activity>
+        <activity android:name=".Android3Tutorial.CheckBoxDemoActivity">
+        </activity>
+        <activity android:name=".Android3Tutorial.AlertDialogDemoActivity">
+        </activity>
+        <activity android:name=".Android3Tutorial.RatingBarDemoActivity">
+        </activity>
+        <activity android:name=".Android3Tutorial.WebViewDemoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Android3Tutorial.SeekBarDemoActivity">
+        </activity>
+    </application>
+
+</manifest>
